@@ -1,0 +1,31 @@
+[
+    {
+        "username": "vimalvas03",
+        "id": "53978d6e0b1bec248f154ae52f645424cd15109fa2174e42806814b53f07d69d",
+        "image": ".\/circle.svg",
+        "profile_link": "#",
+        "dateCreated": "April 19 2021",
+        "status": "Student",
+        "ques": "Who will win Elclassico on this Friday?",
+        "ques_options": [
+            {
+                "choice": "Real Madrid",
+                "id": 0,
+                "votes": 0
+            },
+            {
+                "choice": "Barcelona",
+                "id": 1,
+                "votes": 0
+            },
+            {
+                "choice": "Draw",
+                "id": 2,
+                "votes": 0
+            }
+        ],
+        "likes": 0,
+        "comment": 0,
+        "topic": ""
+    }
+]
