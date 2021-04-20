@@ -97,7 +97,39 @@ if(isset($_SESSION['username']))
 			</div>
 		</div>-->
 	</div>
-
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript">
+			
+		// Make a asynchronous request to the normal 
+		function nonUser()
+		{
+			var xhr = new XMLHttpRequest();
+			xhr.open("GET", "../controllers/loader_all.php", true);
+			xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+			xhr.onreadystatechange = function()
+			{
+				if(xhr.readyState == 4 && xhr.status == 200)
+				{
+					var data = JSON.parse(xhr.responseText);
+					//console.log(data);
+					var updateOptions = showPosts(data);
+					console.log(updateOptions);
+				}
+			}
+
+			xhr.send();
+		}
+
+		<?php if(!$logedIn){ ?>
+			nonUser();
+		<?php } ?>
+
+
+		console.log(data);
+
+
+	</script>
 </body>
 </html
